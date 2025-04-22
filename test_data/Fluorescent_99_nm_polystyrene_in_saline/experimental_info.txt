@@ -1,0 +1,5 @@
+There are 150 fluorescence micrographs (in TIFF format) that show polystyrene 
+nanoparticles diffusing in saline. The particles have a nominal diameter of 99
+nanometers, the image pixel size is 314.3 nanometers, the time between 
+micrographs is 100 milliseconds, the temperature is 23.4 C, and the viscosity
+is of the saline solution is 9.2e-4 Pascal seconds.
