@@ -1,6 +1,7 @@
 import numpy as np
 
-from scipy.stats import gamma
+import pymc as pm
+import arviz as az
 
 
 
@@ -8,6 +9,8 @@ def run_no_noise_MCMC(member):
     particle_nums = member["particle_nums"] 
     positions = member["positions"]
     radii = member["radii"]
+    C = member["C"]
+    num_chains = member["num_chains"]
 
     percentages = []
     variances = []
@@ -40,7 +43,7 @@ def run_no_noise_MCMC(member):
             obs = pm.Normal("obs", mu=0, sigma=sigma, observed=dist_arr)
             
             # Use NUTS sampler
-            trace = pm.sample(draws=20000, tune=10000, chains=4, target_accept=0.9, return_inferencedata=True, nuts_sampler="numpyro")
+            trace = pm.sample(draws=20000, tune=10000, chains=num_chains, target_accept=0.9, return_inferencedata=True, nuts_sampler="numpyro", progressbar=False)
 
         # extract radius samples
         tau_samples = trace.posterior["tau"].values.flatten()
@@ -54,6 +57,12 @@ def run_no_noise_MCMC(member):
 
         # append to variances
         variances.append(np.var(rad_samples))
+    
+    percentages = np.array(percentages)
+    variances = np.array(variances)
+
+    return [percentages, variances]
+    
 
 
 
