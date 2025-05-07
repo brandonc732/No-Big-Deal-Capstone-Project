@@ -42,11 +42,16 @@ Example [simulation gif](readme_images/sim_gamma.gif) (not allowed to have NIST 
 
 ## SimulationUpdate.ipynb
 
-Harshit and Aidan's changes to improve original simulation notebook.
+Soham and Aidan's changes to improve original simulation notebook.
 
 Describe changes made and how to run it since it's setup for google colab
 
 ## CheatMethod.ipynb
+
+author: Harshit
+
+Built off of MCMC code in `Inference Layout.ipynb` to ....
+
 
 # Folder Layout
 
