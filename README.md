@@ -39,7 +39,7 @@ Further changes would need to be made to qualify the aspects of the testing data
 
 Example simulation gif (not allowed to have NIST to compare):
 
-![SimulationUpdate.ipynb example](images/demo.gif)
+![SimulationUpdate.ipynb example](readme_images/sim_gamma.gif)
 
 
 ## SimulationUpdate.ipynb
