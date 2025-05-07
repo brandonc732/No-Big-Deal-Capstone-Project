@@ -20,7 +20,7 @@ asdf
 - We have provided the anaconda Python environment used to run the project in the `anaconda environment` folder. All the libraries are pretty standard except for a few of the backend accelerations used for PyMC, which could potentially lead to issues across platforms.
    - PyMC also offers CUDA GPU acceleration, but only on Linux, so it was not used here.
 
-
+Otherwise everything Python related in the respository should be plug and play. The beads program could pose some trouble, but more detail for this is provided in [beads readme](https://github.com/brandonc732/No-Big-Deal-Captsone-Project/blob/main/beads/readme.md)
 
 # Main notebooks
 
