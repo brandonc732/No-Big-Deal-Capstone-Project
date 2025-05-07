@@ -59,6 +59,10 @@ Each folder includes its own readme describing its contents and purpose.
 
 ## Inference Layout
 
+author : Brandon
+
+Contains all work with deriving inference methods through ground truth demonstrations. This includes `Inference Layout.ipynb` where we create initial working versions of Bayesian Equation and MCMC posterior infernence methods along with Monte Carlo demonstration folders where we test their long term performance
+
 ## beads
 
 Contains all work done with beads.exe from [![DOI](https://img.shields.io/badge/DOI-10.1214%2F09--AOAS299-blue)](https://doi.org/10.1214/09-AOAS299)
