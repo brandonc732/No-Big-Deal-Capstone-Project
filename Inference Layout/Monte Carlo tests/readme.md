@@ -17,6 +17,7 @@ Since my desktop has 64 GB of RAM, I didn't bother optimizing the multiprocessin
 - num_chains
 - num_particles
 - num_sigmas
+- num_cores
 - change draws or tune within [no_noise_MCMC_helper.py](MCMC/no_noise_MCMC_helper.py) or [normal_noise_MCMC_helper.py](MCMC/normal_noise_MCMC_helper.py)
   - Will be the most effective in reducing RAM usage and computation, but of course results in less posterior exploration.
 
