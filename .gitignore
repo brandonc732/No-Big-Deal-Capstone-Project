@@ -1,3 +1,5 @@
 *.tif
 *.avi
 *.mp4
+
+!Inference Layout\20_particles\simulation_v3.tif

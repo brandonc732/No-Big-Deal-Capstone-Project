@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "temperature": 296.55,
+    "viscosity": 0.00092,
+    "mean_particle_radius": 5e-08,
+    "std_particle_radius": 1e-08,
+    "frame_size": [
+      512,
+      512
+    ],
+    "pixel_size": 3.149e-07,
+    "z_range": [
+      -2e-06,
+      2e-06
+    ],
+    "focal_plane": 0,
+    "diffusion_time": 0.033,
+    "num_particles": 20,
+    "wavelength": 5.5e-07,
+    "numerical_aperture": 1.4,
+    "brightness_factor": 8000.0,
+    "asymmetry_factor": 1.2,
+    "characteristic_length": 2.5e-07,
+    "particle_density": 1050.0,
+    "medium_density": 1000.0,
+    "background_noise": 1,
+    "noise_floor": 0.0,
+    "noise_ceiling": 1.5259021896696422e-05,
+    "add_camera_noise": true
+  },
+  "timestamp": "2025-04-14T21:36:27.636775"
+}
