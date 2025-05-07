@@ -60,7 +60,7 @@ author: Harshit
 Built off of MCMC code in `Inference Layout.ipynb` to ....
 
 
-# Folder Layout
+# Folders
 
 Each folder includes its own readme describing its contents and purpose.
 
