@@ -7,11 +7,18 @@ Team No Big Deal:
 - Aidan Shea
 - Harshit Singh
 
+## Project overview
+
+asdf
+
 
 
 # Getting Started
 
-not allowed to upload NIST images. Have to input NIST images into test data folder
+- Since we are not allowed to upload NIST images to the public GitHub, you need to copy the folder of NIST test data supplied by Dr Pintar into the `test_data` folder.
+
+- We have provided the anaconda Python environment used to run the project in the `anaconda environment` folder. All the libraries are pretty standard except for a few of the backend accelerations used for PyMC, which could potentially lead to issues across platforms.
+   - PyMC also offers CUDA GPU acceleration, but only on Linux, so it was not used here.
 
 
 
