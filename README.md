@@ -21,7 +21,25 @@ not allowed to upload NIST images. Have to input NIST images into test data fold
 
 ## Simulation.ipynb
 
-Brandon's first attempt at creating a fitted simulation
+author : Brandon
+
+**note:** it's highly recommended to collapse jupyter notebook cell sections for readability 
+
+With the project goal of modeling or characterizing the location error within the NIST testing data, `Simulation.ipynb` Creates a simulation fitted to mimick the appearance of the test images. Using strong TrackPy identifications in the test data, the simulation:
+
+- Mimicks background noise by fitting a guassian distribution to test image background pixels (0 - 0.9999 percentile)
+- Mimicks particle appearance by fitting 2D guassian curves to each TrackPy identification. The resulting x_sigmas and y_sigmas are sampled according to the signal of their identification.
+- Mimicks particle brightness change by having simulated particle brightnesses use a random walk similar to that seen in the TrackPy identifications
+
+The steps to this process along with other image details are outlined with markdown sections and plots throughout the notebook.
+
+Overall, the simulation was able to produce images that look similar to the test data both in particle shape and sporatic particle behaivor. However, just recreating the fitted 2D guassian curves in the simulation images did not induce any significant errors in subsequent TrackPy identifications. This is detailed in final section of the notebook.
+
+Further changes would need to be made to qualify the aspects of the testing data that induce localization error such as pixel deviation from the gaussian blur. This is implemented in `SimulationUpdate.ipynb`.
+
+Example simulation gif (not allowed to have NIST to compare):
+
+![SimulationUpdate.ipynb example](images/demo.gif)
 
 
 ## SimulationUpdate.ipynb
@@ -30,7 +48,7 @@ Harshit and Aidan's changes to improve original simulation notebook.
 
 Describe changes made and how to run it since it's setup for google colab
 
-
+## CheatMethod.ipynb
 
 # Folder Layout
 
