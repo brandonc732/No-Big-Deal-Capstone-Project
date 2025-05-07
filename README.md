@@ -37,9 +37,7 @@ Overall, the simulation was able to produce images that look similar to the test
 
 Further changes would need to be made to qualify the aspects of the testing data that induce localization error such as pixel deviation from the gaussian blur. This is implemented in `SimulationUpdate.ipynb`.
 
-Example simulation gif (not allowed to have NIST to compare):
-
-![SimulationUpdate.ipynb example](readme_images/sim_gamma.gif)
+Example [simulation gif](readme_images/sim_gamma.gif) (not allowed to have NIST video in github to compare).
 
 
 ## SimulationUpdate.ipynb
