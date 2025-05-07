@@ -20,7 +20,7 @@ asdf
 - We have provided the anaconda Python environment used to run the project in the `anaconda environment` folder. All the libraries are pretty standard except for a few of the backend accelerations used for PyMC, which could potentially lead to issues across platforms.
    - PyMC also offers CUDA GPU acceleration, but only on Linux, so it was not used here.
 
-Otherwise everything Python related in the respository should be plug and play. The beads program could pose some trouble, but more detail for this is provided in [beads readme](https://github.com/brandonc732/No-Big-Deal-Captsone-Project/blob/main/beads/readme.md)
+Otherwise everything Python related in the respository should be plug and play. The beads program could pose some trouble, but more detail for this is provided in [beads readme](https://github.com/brandonc732/No-Big-Deal-Capstone-Project/blob/main/beads/readme.md)
 
 # Main notebooks
 
@@ -74,7 +74,7 @@ Contains all work with deriving inference methods through ground truth demonstra
 
 Contains all work done with beads.exe from [![DOI](https://img.shields.io/badge/DOI-10.1214%2F09--AOAS299-blue)](https://doi.org/10.1214/09-AOAS299)
 
-Ultimately couldn't use it for the project. More detail in [beads readme](https://github.com/brandonc732/No-Big-Deal-Captsone-Project/blob/main/beads/readme.md)
+Ultimately couldn't use it for the project. More detail in [beads readme](https://github.com/brandonc732/No-Big-Deal-Capstone-Project/blob/main/beads/readme.md)
 
 ## test data
 
