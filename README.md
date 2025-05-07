@@ -15,15 +15,15 @@ not allowed to upload NIST images. Have to input NIST images into test data fold
 
 
 
-# Simulation notebooks
+# Main notebooks
 
+This folder includes the primary large notebooks of the project. Each Jupyter notebook should outline its process with markdown sections and comments.
 
+**note:** it's highly recommended to collapse jupyter notebook cell sections for readability 
 
 ## Simulation.ipynb
 
 author : Brandon
-
-**note:** it's highly recommended to collapse jupyter notebook cell sections for readability 
 
 With the project goal of modeling or characterizing the location error within the NIST testing data, `Simulation.ipynb` Creates a simulation fitted to mimick the appearance of the test images. Using strong TrackPy identifications in the test data, the simulation:
 
