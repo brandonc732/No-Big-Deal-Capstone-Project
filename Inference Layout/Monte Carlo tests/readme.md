@@ -48,7 +48,15 @@ Includes Monte Carlo demonstrations for posterior estimation using MCMC as descr
 **note:** since MCMC inference is  computationally expensive, I only tested particle counts of around 100 to keep run times reasonable
 
 
+## Numpyro
 
+The standard NUTS sampler in PyMC is simply too computationally expensive to use in Monte Carlo demonstrations. 
+
+So I employed the `numpyro` NUTS sampler, which is significantly faster. However, it is known to have random compatability issues. For example, it wasn't compatible with some aspect of widgets in my version of Jupyter notebook and simply wouldn't run. 
+
+The [Anaconda environment](https://github.com/brandonc732/No-Big-Deal-Capstone-Project/blob/main/anaconda%20environment/Capstone_environment.yaml) within this github should have all compatability issues sorted, but if you run into to anything, try changing the code to use the standard sampler instead to rule out numpyro issues.
+
+**note:** Numpyro offers CUDA GPU acceleration for Linux
 
 
 
