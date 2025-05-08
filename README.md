@@ -59,7 +59,17 @@ Aidan created a function called "fit_pixel_noise_kde" that builds a realistic pi
 
 author: Harshit
 
-Built off of MCMC code in `Inference Layout.ipynb` to ....
+Built off of MCMC code in `Inference Layout.ipynb`
+This Jupyter notebook provides a calibration framework for nanoparticle tracking by implementing a "Cheat Method" error modeling approach. The core functionality simulates Gaussian localization noise on known (true) particle trajectories, systematically adjusting the injected noise magnitude until the mean estimated particle radius, obtained via the Stokes-Einstein relation, matches the nominal radius. The workflow includes:
+
+Synthetic trajectory generation with precise control over noise characteristics,
+
+Localization error injection via Gaussian perturbations,
+
+Visualization of particle paths and uncertainty rings using TrackPy and Matplotlib,
+
+Manual tuning of pixel-level noise parameters based on ground-truth recovery.
+This notebook is designed to benchmark and recalibrate particle tracking pipelines where ground truth is available, offering a robust tool to fine-tune localization uncertainty estimates and ensure physically meaningful radius recovery.
 
 
 # Folders
