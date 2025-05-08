@@ -51,7 +51,9 @@ Example [simulation gif](readme_images/sim_gamma.gif) (not allowed to have NIST 
 
 Soham and Aidan's changes to improve original simulation notebook.
 
-Describe changes made and how to run it since it's setup for google colab
+(Describe changes made and how to run it since it's setup for google colab)
+
+Aidan created a function called "fit_pixel_noise_kde" that builds a realistic pixel-level noise model by extracting residuals from real particle image patches. For each patch it fits a 2d gaussian, and computes the residual noise. These residuals are then used to fit a kernel density estimate (KDE) to find the empirical distribution of pixel noise. The kde is then used in the simulation to add any imperfections of camera based noise.
 
 ## CheatMethod.ipynb
 
