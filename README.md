@@ -51,7 +51,19 @@ Example [simulation gif](readme_images/sim_gamma.gif) (not allowed to have NIST 
 
 Soham and Aidan's changes to improve original simulation notebook.
 
-(Describe changes made and how to run it since it's setup for google colab)
+## Knob Framework & Grid‑Search Calibration (Soham’s Contribution)
+
+- Introduced three global tuning parameters to bridge simulation and real data:
+  1. **noise_amp**: scales the background‑noise grain  
+  2. **sigma_mul**: rescales the per‑particle PSF width (bright spots sharpened when < 1, dim ones blurred when > 1)  
+  3. **grad_x, grad_y**: linear illumination gradient across the frame
+
+- Performed a discrete grid search over all 81 combinations of  
+  noise_amp ∈ {0.5, 1.0, 1.5}, sigma_mul ∈ {0.8, 1.0, 1.2}, (grad_x, grad_y) ∈ {−0.01, 0, 0.01}²  
+  on the first ten frames (noise‑free branch) to find the triple minimizing pixel‑wise RMS error.
+
+- Locked in the best parameters (noise_amp=1.0, sigma_mul=0.8, background_grad=(+0.01, −0.01)) for all subsequent high‑fidelity renders and MCMC inference.
+
 
 Aidan created a function called "fit_pixel_noise_kde" that builds a realistic pixel-level noise model by extracting residuals from real particle image patches. For each patch it fits a 2d gaussian, and computes the residual noise. These residuals are then used to fit a kernel density estimate (KDE) to find the empirical distribution of pixel noise. The kde is then used in the simulation to add any imperfections of camera based noise.
 
