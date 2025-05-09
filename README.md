@@ -7,10 +7,7 @@ Team No Big Deal:
 - Aidan Shea
 - Harshit Singh
 
-## Project overview
-
-asdf
-
+**Soham's Simulation:** [GitHub](https://github.com/soso1407/nanoparticle-tracking-simulation)
 
 
 # Getting Started
